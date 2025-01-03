@@ -60,7 +60,7 @@ namespace HomeWork_13.Core.Controllers.StudentController
             return Ok("Student deleted successfully");
         }
 
-        [HttpGet("Login Up")]
+        [HttpGet("Login")]
         public IActionResult Login(string userName, string password)
         {
             var student = _students.FirstOrDefault(x => x.UserName == userName);
